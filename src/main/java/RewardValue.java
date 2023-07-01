@@ -24,17 +24,14 @@ public class RewardValue {
         return milesValue;
     }
 
-    public double convertFromMilesToCash(int milesValue){
-        double cashReward = milesValue * rate;
+    private double convertMilesToCash(int milesValue){
 
-        return cashReward;
+        return milesValue * rate;
     }
 
-    public int convertCashToMiles(double cashValue){
+    private int convertCashToMiles(double cashValue){
 
-        int miles = (int)cashValue / (int)rate;
-
-        return miles;
+        return (int)cashValue / (int)rate;
     }
 
 
